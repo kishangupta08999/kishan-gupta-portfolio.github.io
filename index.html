@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>c# .Net fullstack devloper</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/27c6d40889.js" crossorigin="anonymous"></script>
+    <style>
+        body
+        {
+            width: 100%;
+           height: 100%;
+           background-color: black;
+          
+        }
+        .navbar
+        {
+            height:11%;
+        }
+       
+       
+        .rhyme
+        {
+          margin-top: 5%;
+          width:100%;
+          height: 650px;
+          border: 2px solid black;
+          background-image:url(images/bg2.jpg);
+          background-repeat: no-repeat;
+          background-size:100% 100%;
+        }
+        .thought
+        {
+          border: 2px solid black;
+          width: 70%;
+          height: 70%;
+          margin-top:5%;
+          margin-left: 16%;
+          background-color: rgba(255, 255, 255, 0.312);
+          padding-top:9%;
+          padding-left:17%;
+          border-radius: 115px;
+        }
+        H4
+        {
+          font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+          color: rgb(246, 246, 246);
+          font-weight: bolder;
+          font-size: xx-large;
+
+        }
+        h1
+        {
+          font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+          font-weight:900;
+          size:80px;
+        }
+        h2
+        {
+          word-spacing: 3px;
+          line-break:strict;
+          font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        #intro1
+        {
+          width:100%;
+          height: 650px;
+          background-image: url(images/log3.jpg);
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          margin-top: 5%;
+          
+
+        }
+        #photo
+        {
+          margin-top:5%;
+          margin-left: 5%;
+          border-radius: 15px;
+          width: 25%;
+          height: 70%;
+          float: left;
+          background-image: url(images/kishan6.jpg);
+          background-repeat: no-repeat;
+          background-size:100% 100%;
+        }
+        #content
+        {
+          width: 65%;
+          height: 100%;
+          float: right;
+          background-color: rgba(255, 255, 255, 0.312);
+          border-left: 2px double black;
+          padding: 3%;
+          word-spacing: 15px;
+          line-height: 25px;
+          color:black;
+         }
+         button
+         {
+          width:35%;
+          height: 11%;
+          font-size: larger;
+          font-weight: bolder;
+          border: 3px solid black;
+          border-radius: 20px;
+          font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+          background-color: black;
+          color: aliceblue;
+         }
+         button:hover
+         {
+          background-color: rgb(231, 233, 229);
+          color: black;
+          transform: scale(1.1,1.1);
+         }
+        #skill
+        {
+          width:100%;
+          height: 650px;
+          background-image: url(images/travel4.jpg);
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          margin-top: 5%;
+          
+
+        }
+        #skillphoto
+        {
+          margin-top:5%;
+          margin-right: 5%;
+          border-radius: 15px;
+          width: 25%;
+          height: 70%;
+          float: right;
+          background-image: url(images/bg3.jpg);
+          background-repeat: no-repeat;
+          background-size:100% 100%;
+        }
+        #skillset
+        {
+          width: 65%;
+          height:100%;
+          float: left;
+          background-color: rgba(255, 255, 255, 0.312);
+          border-right: 2px double black;
+          padding: 3%;
+          word-spacing: 15px;
+          line-height: 25px;
+          color:black;
+        }
+        #my_project
+        {
+          width:100%;
+          height: 650px;
+          background-image: url(images/loim1.jpg);
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          margin-top: 5%;
+          
+
+        }
+        #project_photo
+        {
+          margin-top:5%;
+          margin-left: 5%;
+          border-radius: 15px;
+          width: 25%;
+          height: 70%;
+          float: left;
+          background-image: url(images/bg1.jpg);
+          background-repeat: no-repeat;
+          background-size:100% 100%;
+        }
+        #project_content
+        {
+          width: 65%;
+          height: 100%;
+          float: right;
+          background-color: rgba(255, 255, 255, 0.312);
+          border-left: 2px double black;
+          padding: 3%;
+          word-spacing: 15px;
+          line-height: 25px;
+          color:black;
+         }
+         #gallery
+         {
+          width: 100%;
+          height:750px;
+          margin-top: 5%;
+          background-color: aliceblue;
+        
+         }
+         .photos1
+         {
+          width: 18%;
+          height: 38%;
+          border-radius: 120px;
+          float:left;
+          margin:40px;
+          background-image: url(images/kishan1.jpg);
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          
+         }
+         .photos2
+         {
+          width: 18%;
+          height: 38%;
+          border-radius: 120px;
+          float:left;
+          margin:40px;
+          background-image: url(images/kishan2.jpg);
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          
+         }
+         .photos3
+         {
+          width: 18%;
+          height: 38%;
+          border-radius: 120px;
+          float:left;
+          margin:40px;
+          background-image: url(images/kishan3.jpg);
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          
+         }
+         .photos4
+         {
+          width: 18%;
+          height: 38%;
+          border-radius: 120px;
+          float:left;
+          margin:40px;
+          background-image: url(images/kishan4.jpg);
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          
+         }
+         .photos5
+         {
+          width: 18%;
+          height: 38%;
+          border-radius: 120px;
+          float:left;
+          margin:40px;
+          background-image: url(images/kishan5.jpg);
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          
+         }
+         .photos6
+         {
+          width: 18%;
+          height: 38%;
+          border-radius: 120px;
+          float:left;
+          margin:40px;
+          background-image: url(images/kishan6.jpg);
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          
+         }
+         .photos7
+         {
+          width: 18%;
+          height: 38%;
+          border-radius: 120px;
+          float:left;
+          margin:40px;
+          background-image: url(images/kishan7.jpg);
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          
+         }
+         .photos8
+         {
+          width: 18%;
+          height: 38%;
+          border-radius: 120px;
+          float:left;
+          margin:40px;
+          background-image: url(images/kishan8.jpg);
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          
+         }
+         #contact
+        {
+          width:100%;
+          height: 650px;
+          background-image: url(images/loim3.jpeg);
+          background-repeat: repeat-x;
+          background-size: 100% 100%;
+          border-bottom: 3px solid black;
+          border-top: 6px solid black;
+         
+          
+
+        }
+        #message
+        {
+          margin-top:5%;
+          margin-left: 5%;
+          border-radius: 15px;
+          width: 25%;
+          height: 70%;
+          float: left;
+          background-color: rgba(255, 250, 250, 0.777);
+          padding:4%;
+          margin-bottom:20px;
+
+        }
+        #links
+        {
+          width: 32%;
+          height: 100%;
+          float: right;
+          background-color: rgb(255, 255, 255);
+          padding:1%;
+          padding-top:10%;
+          word-spacing: 15px;
+          line-height: 25px;
+          color:black;
+          font-size: larger;
+          font-weight: bold;
+          font-family: Arial, Helvetica, sans-serif;
+         }
+         i
+        {
+          margin:5px;
+          padding:25px;
+        }
+         textarea
+         {
+          max-width: 190px;
+          max-height: 160px ;
+          min-width: 190px;
+          min-height: 160px;
+         }
+         a
+         {
+          text-decoration: none;
+          color: black;
+          text-decoration-line: underline 2px black;
+         }
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar bg-body-tertiary fixed-top" class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+              <h1>
+                <a class="navbar-brand" href="#TOP">KISHAN GUPTA (C# .NET FULLSTACK DEVLOPER)</a>
+              </h1>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h1 class="offcanvas-title" id="offcanvasNavbarLabel">KISHAN GUPTA</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#TOP">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#intro1">ABOUT ME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skill">SKILLS</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#my_project">MY PROJECTS</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#gallery">GALLERY</a>
+                      </li>
+                      <li class="nav-item">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#contact">CONTACT ME</a>
+                      </li>
+                      <li class="nav-item">
+                        <audio src="audio/WhatsApp Audio 2023-08-16 at 00.48.37.mp3" controls></audio>
+                      </li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+    <div class="rhyme">
+      <div class="thought">
+       <h4>HELLO !</h4><br>
+       <H1>I  AM KISHAN GUPTA</H1><br>
+       <H4>C# .NET FULLSTACK DEVLOPER.....</H4>
+      </div>
+    </div>
+    <div id="intro1">
+    <div id="photo"></div>
+      <div id="content"><H1>About Me:-</H1><br><h2>My name is kishan gupta .I am from Azamgarh (uttar pradesh).I did my school from sarvodaya public school Azamgarh. Now I am pursuing BCA (bachelor's of computer application) from makhanlal chaturvedi university ,bhopal(M.P.). Currently I am doing internship in Ducat A intiative of SO INDIA PVT. LTD.(NOIDA,SECTOR 16) .Since last 6 months.In the technology of C#.net fullstack. </h2><br><br><a href="pdf/Kishan-Gupta.pdf" DOWNLOAD><button>DOWNLOAD RESUME</button></a></div>
+    </div>
+    <div id="skill">
+      <div id="skillset">
+        <h1>Skills:-</h1><BR><ul>
+          <h2><li>HTML5</li></h2>
+          <h2><li>CSS3</li></h2>
+          <h2><li>JAVASCRIPT</li></h2>
+          <h2><li>ANGULAR JS</li></h2>
+          <h2><li>MYSQL</li></h2>
+          <h2><li>MSSQL SERVER</li></h2>
+         <h2> <li>C#</li></h2>
+          <h2><li>ADO.net</li></h2>
+          <h2><li>ASP.net</li></h2>
+         <h2> <li>MVC.net</li></h2>
+         <h2> <li>GITHUB</li></h2>
+        </ul>
+      </div>
+       <div id="skillphoto"></div>
+    </div>
+    <div id="my_project">
+      <div id="project_photo"></div>
+        <div id="project_content"><H1>Projects:-</H1><br>
+          <br><ul>
+            <h2><li>WIZARD INDEX PAGE</li></h2><br>
+            <a href="https://kishangupta08999.github.io/wizard.github.io/"><button>VIEW</button></a><br><br>
+            <h2><li>FACEBOOK LOGIN UI</li></h2><br>
+            <a href="https://kishangupta08999.github.io/facebook.github.io/"><button>VIEW</button></a><br><br>
+            <h2><li>HUMSAFAR TRAVELS</li></h2><br>
+            <a href="https://kishangupta08999.github.io/humsafar-travels.github.io/"><button>VIEW</button></a><br>
+          </ul>
+        </div>
+      </div>
+  <div id="gallery">
+    <div class="photos1"></div>
+    <div class="photos2"></div>
+    <div class="photos3"></div>
+    <div class="photos4"></div>
+    <div class="photos5"></div>
+    <div class="photos6"></div>
+    <div class="photos7"></div>
+    <div class="photos8"></div>
+</div>
+<div id="contact">
+  <div id="message">
+    <form>
+      <label>NAME:</label><br>
+      <input type="TEXT" required><br>
+      <LABEl>E-MAIL:</LABEl><br>
+      <INput type="email" required><br>
+        <label>MESSGAE:</label><br>
+        <textarea required></textarea><br><br>
+        <button type="submit">SEND</button>
+    </form>
+
+  </div>
+  <div id="links"><h1>NOTE:-</h1><p> For listen about me in hindi audible format so on play the given audio. it is also my resume in audible format. if the audio playback speed is fast so you can manage its speed .you can also download it to your local folder.... </p><br><br>
+  <audio src="audio/WhatsApp Audio 2023-08-16 at 00.48.37.mp3" controls></audio></div>
+  <div id="links">
+    <a href="https://www.facebook.com/profile.php?id=100012233923944">    <i class="fa-brands fa-facebook fa-2xl"></i>FOLLOW ON FACEBOOK
+    </a><BR>
+    <a href="https://github.com/kishangupta08999">    <i class="fa-brands fa-github fa-2xl"></i>FOLLOW ON GITHUB
+    </a><br>
+     <a href="https://www.linkedin.com/in/kishan-gupta-031b40199/"> <i class="fa-brands fa-linkedin fa-2xl" style="color: #1660df;"></i>FOLLOW ON LINKEDIN</a><br>
+    <a href="tel:+919696115431"><i class="fa-solid fa-phone fa-2xl"></i>CALL ON +91969611XXXX</a><br>
+     <a href="https://www.instagram.com/kishan_gupta_0007/"><i class="fa-brands fa-instagram fa-2xl" style="color: #fda308;"></i>FOLLOW ON INSTAGRAM</a><br>
+    <a href="mailto:gkkishan08999@gmail.com"><i class="fa-solid fa-envelope fa-2xl"></i>E-MAIL ME</a><br>
+  </div>
+</div>
+
+
+</body>
+</html>
